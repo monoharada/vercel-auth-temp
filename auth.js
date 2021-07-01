@@ -1,7 +1,7 @@
 const protect = require('static-auth');
 const safeCompare = require('safe-compare');
 
-const app = protect(
+const auth = protect(
   '/',
   (username, password) =>
     // adminは消したほうがよい
